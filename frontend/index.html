@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Biblioteca</h1>
+
+  <p id="mensaje"></p>
+
+  <form id="form" novalidate>
+    <h2 id="form-titulo">Nuevo libro</h2>
+    <input type="hidden" id="id">
+    <label>Título <input id="titulo"></label> <small id="error-titulo"></small>
+    <label>Autor <input id="autor"></label> <small id="error-autor"></small>
+    <label>Año <input id="año" type="number"></label> <small id="error-año"></small>
+    <label>Precio <input id="precio" type="number"></label> <small id="error-precio"></small>
+    <label><input id="disponible" type="checkbox" checked> Disponible</label>
+    <button type="submit">Guardar</button>
+    <button type="button" id="cancelar">Cancelar</button>
+  </form>
+
+  <h2>Libros</h2>
+  <p id="cargando" hidden>Cargando...</p>
+  <table>
+    <thead>
+      <tr><th>Título</th><th>Autor</th><th>Año</th><th>Precio</th><th>Disponible</th><th></th></tr>
+    </thead>
+    <tbody id="lista"></tbody>
+  </table>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+form label {
+  display: block;
+  margin-top: 8px;
+}
+
+small {
+  color: red;
+}
+
+.invalido {
+  border: 2px solid red;
+}
+
+.error {
+  color: red;
+}
+
+.ok {
+  color: green;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
